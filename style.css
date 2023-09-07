@@ -1,0 +1,79 @@
+body {
+    display: flex;
+    align-items: start;
+    background: url(../images/bg.webp) no-repeat 50%/ cover;;
+    height: 100vh;
+}
+
+h2, h3 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+li {
+    width: 200px;
+    cursor: pointer;
+    padding: 25px;
+    background-color: rgb(208, 243, 125);
+    margin: 10px 20px 20px 0;
+    text-transform: uppercase;
+}
+
+li:hover {
+    background-color: #e1e1e1;
+}
+
+.container-products {
+    margin-top: 67px;
+}
+
+.container-info {
+    width: 300px;
+    margin-top: 67px;
+    text-align: center;
+    background-color: rgb(208, 243, 125);
+}
+
+button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: rgb(99, 229, 99);
+    color: black;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #e1e1e1;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    width: 400px;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input,
+select {
+    margin-top: 5px;
+    padding: 5px;
+    width: 100%;
+}
+
+#my-orders-button {
+    margin-top: 20px;
+    max-width: 150px;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson 19 HW37</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h2>All categories</h2>
+        <ul id="categories">
+          <li class="category">electronics</li>
+          <li class="category">clothing</li>
+          <li class="category">books</li>
+        </ul>
+      </div>
+      <div>
+        <button id="my-orders-button">My Orders</button>
+        <ul id="products" class="container-products"></ul>
+      </div>
+      <div>
+        <div id="product-info" class="container-info"></div>
+        <form id="order-form" style="display: none;">
+            <h3>Order Form</h3>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your fullname">
+            <label for="city">City:</label>
+            <select id="city" name="city">
+                <option value="" disabled selected>Select City</option>
+                <option value="Dnipro">Dnipro</option>
+                <option value="Kharkiv">Kharkiv</option>
+                <option value="Kyiv">Kyiv</option>
+                <option value="Lviv">Lviv</option>
+                <option value="Odessa">Odessa</option>
+            </select>
+            <label for="warehouse">Delivery Warehouse №:</label>
+            <select id="warehouse" name="warehouse">
+                <option value="" disabled selected>Select Warehouse</option>
+                <option value="Warehouse №1">Warehouse №1</option>
+                <option value="Warehouse №2">Warehouse №2</option>
+                <option value="Warehouse №3">Warehouse №3</option>
+                <option value="Warehouse №4">Warehouse №4</option>
+                <option value="Warehouse №5">Warehouse №5</option>
+            </select>
+            <label for="payment">Payment Method:</label>
+            <select id="payment" name="payment">
+                <option value="" disabled selected>Select Payment Method</option>
+                <option value="cash">Cash on Delivery</option>
+                <option value="card">Card Payment</option>
+            </select>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity">
+            <label for="comment">Comment:</label>
+            <input type="text" id="comment" name="comment" placeholder="Optional">
+            <div id="error-container"></div>
+            <button type="submit">Place Order</button>
+        </form>
+      </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
